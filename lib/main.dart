@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:coffee_shop_frontend/MainScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: MyHomePage(),
+      home: MainScreen(),
     );
   }
 }

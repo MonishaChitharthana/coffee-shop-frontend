@@ -177,10 +177,15 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Image.asset(
-                      'assets/images/registerLogin/facebook.png',
-                      fit: BoxFit.cover,
-                      height: 20,
+                    GestureDetector(
+                      onTap: () {
+                        print("Clicked");
+                      },
+                      child: Image.asset(
+                        'assets/images/registerLogin/facebook.png',
+                        fit: BoxFit.cover,
+                        height: 20,
+                      ),
                     ),
                     Image.asset(
                       'assets/images/registerLogin/google.png',
