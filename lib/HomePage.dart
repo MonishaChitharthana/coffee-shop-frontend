@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final activeLineWidth = 80.0;
     final inactiveLineColor = Colors.white;
     final activeLineColor = Colors.brown[300];
-    final TextEditingController _controller = TextEditingController();
+    // final TextEditingController _controller = TextEditingController();
 
     return Scaffold(
       backgroundColor: Colors.black,

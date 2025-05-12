@@ -11,7 +11,10 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _controllerOne = TextEditingController();
+  final TextEditingController _controllerTwo = TextEditingController();
+  final TextEditingController _controllerThree = TextEditingController();
+  final TextEditingController _controllerFour = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -54,8 +57,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 Container(
                   decoration: BoxDecoration(color: Colors.grey[800]),
                   margin: EdgeInsets.all(20),
-                  child: TextField(
-                    controller: _controller,
+                  child: TextFormField(
+                    style: GoogleFonts.poppins(color: Colors.white),
+                    controller: _controllerOne,
                     decoration: InputDecoration(
                       labelText: 'Full Name',
                       labelStyle: GoogleFonts.poppins(
@@ -69,8 +73,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 Container(
                   decoration: BoxDecoration(color: Colors.grey[800]),
                   margin: EdgeInsets.only(left: 20, bottom: 20, right: 20),
-                  child: TextField(
-                    controller: _controller,
+                  child: TextFormField(
+                    style: GoogleFonts.poppins(color: Colors.white),
+                    controller: _controllerTwo,
                     decoration: InputDecoration(
                       labelText: 'E-mail Address',
                       labelStyle: GoogleFonts.poppins(
@@ -84,8 +89,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 Container(
                   decoration: BoxDecoration(color: Colors.grey[800]),
                   margin: EdgeInsets.only(left: 20, bottom: 20, right: 20),
-                  child: TextField(
-                    controller: _controller,
+                  child: TextFormField(
+                    style: GoogleFonts.poppins(color: Colors.white),
+                    controller: _controllerThree,
                     decoration: InputDecoration(
                       labelText: 'Password',
                       labelStyle: GoogleFonts.poppins(
@@ -99,8 +105,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 Container(
                   decoration: BoxDecoration(color: Colors.grey[800]),
                   margin: EdgeInsets.only(left: 20, bottom: 20, right: 20),
-                  child: TextField(
-                    controller: _controller,
+                  child: TextFormField(
+                    style: GoogleFonts.poppins(color: Colors.white),
+                    controller: _controllerFour,
                     decoration: InputDecoration(
                       labelText: 'Confirm Password',
                       labelStyle: GoogleFonts.poppins(
